@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arisu-computer-use"
+version = "0.1.0"
+description = "Hybrid Codex/Claude-style Computer Use MCP Server and Arisu 2D Desktop Pet HUD for Windows"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.9.0,<2.0.0",
+    "mss>=9.0.1",
+    "pillow>=10.0.0",
+    "pyside6>=6.7.0",
+    "uiautomation>=2.0.20",
+    "comtypes>=1.4.0",
+    "pydantic>=2.7.0",
+    "websockets>=13.0",
+]
+
+[project.scripts]
+arisu-cua = "arisu_cua.server:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arisu_cua"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E402"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

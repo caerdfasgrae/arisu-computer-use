@@ -1,0 +1,10 @@
+{
+  "name": "arisu-computer-use",
+  "displayName": "Arisu Computer Use",
+  "version": "0.1.0",
+  "description": "Hybrid Codex/Claude-style Windows Computer Use MCP (Dual-Monitor DPI v2, WebP vision, Win32 control) and Arisu 2D Pet companion.",
+  "author": "Abyan AI",
+  "commands": [
+    "arisu-computer-use"
+  ]
+}

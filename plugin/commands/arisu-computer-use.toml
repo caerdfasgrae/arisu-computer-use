@@ -1,0 +1,12 @@
+description = "Jalankan tugas otomasi desktop Windows dengan Arisu Computer Use (Hybrid CLI-first, Dual-Monitor GUI-fallback)"
+
+prompt = """
+Invoke the arisu-computer-use skill.
+
+Selesaikan permintaan pengguna dengan strategi Hybrid Codex-Style dan pagar keamanan ketat:
+1. Prioritaskan CLI/PowerShell (`run_command`) jika tugas bisa diselesaikan tanpa interaksi GUI.
+2. Untuk tugas GUI di desktop Windows (`Default` desktop), ikuti aturan wajib:
+   - Buka setiap file gambar offloaded (`[Resource offloaded to file:///.../media_0.webp]`) dengan `read_file` sebelum mengambil aksi apa pun.
+   - Jalankan maksimal 1 aksi mutasi per giliran (1 aksi -> `arisu_cu_wait_and_verify` -> `read_file` gambar baru).
+   - Wajib isi `expected_window` pada `arisu_cu_keyboard_action` dan `arisu_cu_mouse_action`, dan gunakan `arisu_cu_window_action(action="launch", ...)` untuk membuka aplikasi allowlisted.
+"""

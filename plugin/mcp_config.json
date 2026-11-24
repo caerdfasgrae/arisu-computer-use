@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "arisu-cua": {
+      "command": "<PATH_TO_VENV_PYTHON>",
+      "type": "stdio",
+      "args": [
+        "-m",
+        "arisu_cua.server"
+      ]
+    }
+  }
+}

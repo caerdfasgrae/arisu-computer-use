@@ -1,0 +1,24 @@
+{
+  "theme": "Moonlit Sapphire",
+  "owner": "Abyan",
+  "updated": "2026-11-19",
+  "colors": {
+    "navy": "#1C3F7A",
+    "lilac": "#BAC2DC",
+    "silver": "#C0C0C0",
+    "white": "#FFFFFF",
+    "ice": "#E0E8F5",
+    "blush": "#FCE3E6",
+    "blushPink": "#F5C8D0"
+  },
+  "usage": {
+    "navy": "outline, hair shadow, HUD panel",
+    "lilac": "hair mid, secondary UI",
+    "silver": "trim, accessories",
+    "white": "capelet, thigh-high, highlight",
+    "ice": "hair highlight, glow",
+    "blush": "inner ear, cheeks",
+    "blushPink": "soft accent (terminal/HUD)"
+  },
+  "source": "b0/palette.png"
+}
